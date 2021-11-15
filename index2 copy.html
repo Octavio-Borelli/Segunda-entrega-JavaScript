@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 8 Javascript</title>
+<link rel="stylesheet" href="estilos/css/style.css">
+</head>
+<body class="fuente">
+
+    
+
+
+  <div class="fondoFormulario">
+    
+    
+    
+        <form id="datosFormularioCliente" class="formularioCliente" name="formulario">
+
+            
+                    <div class= "textBox">
+                        <label for="inputNombre" class="form-label">Nombre</label>
+                        <input type="text" class="input" id="inputNombre" name="nombre"/>
+                        <small></small>
+                    </div>
+
+            
+                    <div class= "textBox">
+                        <label for="inputApellido" class="form-label">Apellido</label>
+                        <input type="text" class="input" id="inputApellido" name="apellido" />
+                        <small></small>
+                    </div>
+                    
+                    <div class= "textBox">
+                        <label for="inputEmail" class="form-label">Email</label>
+                        <input type="email" class="input" id="inputEmail" name="email" />
+                        <small></small>
+                    </div>
+                    
+                    <div class= "textBox">
+                        <label for="inputDni" class="form-label">Dni</label>
+                        <input type="number" class="input" id="inputDni" name="dni" />
+                        <small></small>
+                    </div>
+                    
+                    <div class= "textBox">
+                        <label for="inputDireccion" class="form-label">Dirección</label>
+                        <input type="text" class="input" id="inputDirección" name="dirección" />
+                        <small></small>
+                    </div>
+                    <div class= "textBox">
+                        <label for="inputEdad" class="form-label">Edad</label>
+                        <input type="number" class="input" id="inputEdad" name="edad"/>
+                        <small></small>
+                    </div>
+                    
+                    <div class= "textBox">
+                        <label for="inputTelefono" class="form-label">Teléfono</label>
+                        <input type="number" class="input" id="inputTeléfono" name="teléfono"/>
+                        <small></small>
+                    </div>
+
+                    
+        
+            
+
+           <div id="botonesRadioPase" class= "radios">
+            
+                    <h3>Seleccionar pase</h3>
+            
+            
+                    <div class= "btnPase">
+                        <input class="form-check-input" id="opcionDiario" type="radio" name="inputPase" value="Pase diario $350"> Pase diario $350
+                        <br><br>
+                        
+                        <input class="form-check-input" id="opcionMensual" type="radio" name="inputPase" value="Pase mensual $3100"> Pase mensual $3100
+                        <br><br>
+                        
+                        <input class="form-check-input" id="opcionAnual" type="radio" name="inputPase" value="Pase anual $2400 por mes"> Pase anual $2400 por mes
+                        <br><br>                       
+                    </div>
+                    
+                
+            </div> 
+            
+  
+  
+            <div id="botonesRadioClase" class= "radios">
+            
+            
+                    <h3>Seleccionar Clase</h3> 
+                
+                    
+                    <div class= "btnClase">
+                    <input class="form-check-input" id="opcionMusculacion" type="radio" name="inputClase" value="Musculación"> Musculación
+                    
+                    </div><br>
+                    
+                    <div class= "btnClase"> 
+                    <input class="form-check-input" id="opcionSpinning" type="radio" name="inputClase" value="Spinning"> Spinning
+                   
+                    </div><br>
+                    
+                    <div class= "btnClase"> 
+                        <input class="form-check-input" id="opcionCrossfit" type="radio" name="inputClase" value="Crossfit"> Crossfit
+                        
+                    </div><br>
+               
+            
+            </div>
+  
+  
+            <div id="botonesRadioMétodo" class= "radios">
+                   
+                    <h3>Seleccionar método de pago</h3> 
+                
+                    
+                    <div class= "btnMétodo">
+                        <input class="form-check-input" id="opcionEfectivo" type="radio" name="inputMetodo" value="Efectivo"> Efectivo
+                        
+                    </div><br>
+                    
+                    <div class= "btnMétodo"> 
+                        <input class="form-check-input" id="opcionDebito" type="radio" name="inputMetodo" value="Tarjeta de débito"> Tarjeta de débito
+                       
+                    </div><br>
+                    
+                    <div class= "btnMétodo"> 
+                        <input class="form-check-input" id="opcionCredito" type="radio" name="inputMetodo" value="Tarjeta de crédito"> Tarjeta de crédito
+                        
+                    </div><br>
+                   
+
+            </div>
+
+
+                
+                    <div id="botonesFormulario" class="textBox">
+                        <input class="btnForSubmit" type="submit" value="Agendar cliente" id="btnRegistrar" >
+                        <input class="btnForReset" type="reset" value="Borrar" id="btnBorrar">
+                    </div>
+  
+
+      </form>
+
+            <div class="modal modal--hidden">
+                    <div id="popModal" class="contenidoModal">
+                        <div class="btnCierreModal">
+                            <span>x</span>
+                        </div>
+                            <p>Cliente agendado!</p>
+                            <img src="estilos/css/img/ronnie.jpg" alt="" class="responsive">
+                    </div>
+            </div>
+    
+  </div>
+
+  
+  
+<script src="js/app copy 2.js"></script>
+
+</body>
+</html>
